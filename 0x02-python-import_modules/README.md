@@ -1,4 +1,4 @@
-this is readme file of : 0x02-python-import_modules 
+this is readmefile of 0x02-python-import_modules : 
 Why Python programming is awesome
 How to import functions from another file
 How to use imported functions
