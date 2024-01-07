@@ -2,7 +2,6 @@
 if __name__ == "__main__":
     result = 0
     import sys
-    count = len(sys.argv)
-    for n in range(1, count):
-        result += int(sys.argv[n])
+    for n in sys.argv[1:]:
+        result += int(n)
     print(result)
