@@ -13,5 +13,3 @@ if __name__ == "__main__":
     a, b = int(sys.argv[1]), int(sys.argv[3])
     results = ops[operator](a, b)
     print("{} {} {} = {}".format(a, operator, b, results))
-
-
