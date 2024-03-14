@@ -6,4 +6,5 @@ if __name__== "__main__":
         for i in args:
             result += int(i)
         return result
+
     print(add(sys.argv[1:]))
