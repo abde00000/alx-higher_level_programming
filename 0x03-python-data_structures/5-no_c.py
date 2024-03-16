@@ -2,10 +2,8 @@
 def no_c(my_string):
     if my_string == "":
         return my_string
-    no_c = ""
-    for i in my_string:
-        if i == 'c' or i == 'C':
-            pass
-        else:
-            no_c = no_c + i
-    return no_c
+    no_c_list = []
+    for char in my_string:
+        if char != 'c' and char != 'C':
+            no_c_list.append(char)
+    return ''.join(no_c_list)
