@@ -32,7 +32,7 @@ listint_t *reversed(listint_t *head)
  */
 int is_palindrome(listint_t **head)
 {
-    listint_t *current = *head;
+    listint_t *current = *head, *tmp = *head;
     listint_t *rev;
     int i, len = 0;
 
@@ -40,7 +40,7 @@ int is_palindrome(listint_t **head)
         return (0);
     else if (current->next == NULL)
         return (1);
-    rev = reversed(current);
+    rev = reversed(tmp);
     while (current != NULL)
     {
         len++;
