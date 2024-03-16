@@ -9,6 +9,8 @@
  * Description: singly linked list node structure
  * for project
  */
+#include <stdio.h>
+#include <stdlib.h>
 #include <stddef.h>
 typedef struct listint_s
 {
@@ -21,5 +23,6 @@ listint_t *add_nodeint_end(listint_t **head, const int n);
 void free_listint(listint_t *head);
 int is_palindrome(listint_t **head);
 listint_t *reversed(listint_t *head);
+void push(listint_t **head, int data);
 
 #endif 
