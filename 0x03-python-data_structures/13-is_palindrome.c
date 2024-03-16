@@ -46,6 +46,7 @@ int is_palindrome(listint_t **head)
         len++;
         current = current->next;
     }
+    current = *head;
     for (i = 0; i < len / 2; i++)
     {
         if (current->n != rev->n)
@@ -53,6 +54,7 @@ int is_palindrome(listint_t **head)
         current = current->next;
         rev = rev->next;
     }
+    
     return (1);
 
 }
