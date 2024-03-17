@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 def no_c(my_string):
-    if my_string == "":
-        return my_string
     no_c_str = ""
     for char in my_string:
         if char != 'c' and char != 'C':
