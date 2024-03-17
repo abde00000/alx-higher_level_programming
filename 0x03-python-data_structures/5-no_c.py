@@ -1,4 +1,9 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 def no_c(my_string):
-    new_string = my_string.translate({ord(i): None for i in 'cC'})
-    return new_string
+    if my_string == "":
+        return my_string
+    no_c_list = []
+    for char in my_string:
+        if char.lower() != 'c':
+            no_c_list.append(char)
+    return ''.join(no_c_list)
