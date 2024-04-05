@@ -9,10 +9,15 @@ Methodes:
 """
 class square:
     """
-        initialize a new square object.
+        represents a new square object.
 
         Args:
             size: the size of the square
     """
     def __init__(self, size):
+        """
+        Initialize the square object size.
+        Args:
+        size: the size of the square
+        """
         self.__size = size
