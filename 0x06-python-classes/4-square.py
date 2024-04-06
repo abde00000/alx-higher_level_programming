@@ -28,7 +28,7 @@ class Square:
         """set the new size value of the sqaure.
         
         Args:
-            value (int) : the new size value.
+            value (int): the new size value.
         """
 
         if not isinstance(value, int):
