@@ -5,13 +5,13 @@
 
 class Square:
     """Represents a square."""
-    
+
     def __init__(self, size=0):
         """
         Initialize square object (size).
 
         Args:
-            size(int) : the size of the square.
+            size (int) : the size of the square.
 
         Raises:
             TypeError: if size isn't an int.
