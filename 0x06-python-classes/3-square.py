@@ -13,7 +13,7 @@ class Square:
         area(): Return the area of the square.
     """
 
-    def __init__(self, size):
+    def __init__(self, size=0):
         """
         Initialize square object (size).
 
