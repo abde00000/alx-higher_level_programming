@@ -70,5 +70,4 @@ class Square:
                 str_list += " " * self.__position[0] + "#" * self.__size
                 if i != self.__size - 1:
                     str_list += "\n"
-                
         return str_list
