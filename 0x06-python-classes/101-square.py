@@ -66,6 +66,9 @@ class Square:
         else:
             for _ in range(self.__position[1]):
                 str_list += "\n"
-            for _ in range(self.__size):
-                str_list += " " * self.__position[0] + "#" * self.__size + "\n"
+            for i in range(self.__size):
+                str_list += " " * self.__position[0] + "#" * self.__size
+                if i != self.__size - 1:
+                    str_list += "\n"
+                
         return str_list
