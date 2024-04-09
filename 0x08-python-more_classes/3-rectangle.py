@@ -58,7 +58,8 @@ class Rectangle:
     def __str__(self):
         """return a string that prints the rectangle."""
         rec_str = ""
-
+        if self.__width == 0 or self.__height == 0:
+            return rec_str
         for row in range(self.__height):
             rec_str += "#" * self.__width + "\n"
         return rec_str
