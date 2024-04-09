@@ -65,3 +65,7 @@ class Rectangle:
             if row != (self.__height - 1):
                 rec_str += "\n"
         return rec_str
+
+    def __repr__(self):
+        """Return a string presentation of rectangle class."""
+        return "Rectangle({}, {})".format(self.__width, self.__height)
