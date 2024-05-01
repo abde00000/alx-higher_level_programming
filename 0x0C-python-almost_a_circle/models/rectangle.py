@@ -80,6 +80,7 @@ class Rectangle(Base):
             f"{self.width}/{self.height}"
 
     def __update(self, id=None, width=None, height=None, x=None, y=None):
+        """assigns an argument to each attribute"""
         if id is not None:
             self.id = id
         if width is not None:
@@ -92,7 +93,9 @@ class Rectangle(Base):
             self.y = y
 
     def update(self, *args, **kwargs):
-
+        """updating the public method def update(self, *args):
+        by changing the prototype to update(self, *args, **kwargs)
+        that assigns a key/value argument to attributes"""
         if args:
             self.__update(*args)
         if kwargs:
