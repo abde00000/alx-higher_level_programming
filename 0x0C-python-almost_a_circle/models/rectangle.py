@@ -88,7 +88,7 @@ class Rectangle(Base):
         if height is not None:
             self.height = height
         if x is not None:
-            self.x= x
+            self.x = x
         if y is not None:
             self.y = y
 
