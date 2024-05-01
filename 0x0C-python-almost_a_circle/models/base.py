@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-"""Creating  a Base Class."""
+"""Module for the Base Class."""
 
 
 class Base:
-    """the class Base."""
+    """represent our Base class."""
     __nb_objects = 0
 
     def __init__(self, id=None):
