@@ -10,13 +10,15 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         super().__init__(id)
 
+        self.integer_validation("width", width, False)
         self.__width = width
+        self.integer_validation("height", height, False)
         self.__height = height
+        self.integer_validation("x", x)
         self.__x = x
+        self.integer_validation("y", y)
         self.__y = y
 
-        self.integer_validation("width", width, False)
-        self.integer_validation("height", height, False)
 
     @property
     def width(self):
