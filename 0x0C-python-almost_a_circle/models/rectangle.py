@@ -15,6 +15,9 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
+        self.integer_validation("width", width, False)
+        self.integer_validation("height", height, False)
+
     @property
     def width(self):
         """width of the rectangle"""
@@ -57,7 +60,7 @@ class Rectangle(Base):
 
     def integer_validation(self, name, value, eq=True):
         """ validation of all setter methods and instantiation"""
-        if type(value) != int:
+        if not isinstance(value, int):
             raise TypeError(f"{name} must be an integer")
         if not eq and value <= 0:
             raise ValueError(f"{name} must be > 0")
