@@ -100,5 +100,3 @@ class Rectangle(Base):
             self.__update(*args)
         if kwargs:
             self.__update(**kwargs)
-
-
