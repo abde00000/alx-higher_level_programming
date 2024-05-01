@@ -57,7 +57,7 @@ class Rectangle(Base):
 
     def integer_validation(self, name, value, eq=True):
         """ validation of all setter methods and instantiation"""
-        if not isinstance(value, int):
+        if type(value) != int:
             raise TypeError(f"{name} must be an integer")
         if not eq and value <= 0:
             raise ValueError(f"{name} must be > 0")
