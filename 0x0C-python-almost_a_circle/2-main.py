@@ -21,6 +21,6 @@ if __name__ == "__main__":
         print("[{}] {}".format(e.__class__.__name__, e))
 
     try:
-        Rectangle(10, 2, 3, -1)
+        Rectangle(10, 2, -3, -1)
     except Exception as e:
         print("[{}] {}".format(e.__class__.__name__, e))
