@@ -25,7 +25,7 @@ class Square(Rectangle):
         self.height = value
 
     def __update(self, id=None, size=None, x=None, y=None):
-
+        """updates the attributes of the class square."""
         if id is not None:
             self.id = id
         if size is not None:
@@ -36,7 +36,7 @@ class Square(Rectangle):
             self.y = y
 
     def update(self, *args, **kwargs):
-
+        """assigns attributes."""
         if args:
             self.__update(*args)
         if kwargs:
