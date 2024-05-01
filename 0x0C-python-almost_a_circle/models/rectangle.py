@@ -19,7 +19,6 @@ class Rectangle(Base):
         self.integer_validation("y", y)
         self.__y = y
 
-
     @property
     def width(self):
         """width of the rectangle"""
