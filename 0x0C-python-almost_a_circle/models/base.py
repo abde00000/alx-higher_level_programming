@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module for the Base Class."""
 import json
+from pathlib import Path 
 
 
 class Base:
@@ -49,3 +50,16 @@ class Base:
             n1 = None
         n1.update(**dictionary)
         return n1
+
+    @classmethod
+    def load_from_file(cls):
+        """returns a list of instances."""
+        filename = f"{cls.__name__}.json"
+        file_path = Path(filename)
+        if file_path.exists():
+            with open(filename, "r", encoding="utf-8") as f:
+                new_dict = f.read()
+            return cls.from_json_string(new_dict)
+        else:
+            return []
+
