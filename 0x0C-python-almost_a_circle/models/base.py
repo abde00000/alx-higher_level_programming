@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """Module for the Base Class."""
 import json
-from pathlib import Path 
+from pathlib import Path
 
 
 class Base:
@@ -60,5 +60,4 @@ class Base:
             with open(filename, "r", encoding="utf-8") as f:
                 new_dict = f.read()
             return [cls.create(**d) for d in cls.from_json_string(new_dict)]
-        else:
-            return []
+        return []
