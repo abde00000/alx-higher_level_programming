@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """Module for the Base Class."""
 import json
 from pathlib import Path
