@@ -2,6 +2,8 @@
 """Module for the Base Class."""
 import json
 from pathlib import Path
+from models.rectangle import Rectangle
+from models.square import Square
 
 
 class Base:
@@ -40,8 +42,6 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """returns an instance with all attributes already set"""
-        from models.rectangle import Rectangle
-        from models.square import Square
         if cls is Rectangle:
             n1 = Rectangle(1, 1)
         elif cls is Square:
