@@ -2,8 +2,6 @@
 """Module for the Base Class."""
 import json
 from pathlib import Path
-from models.rectangle import Rectangle
-from models.square import Square
 
 
 class Base:
@@ -11,6 +9,7 @@ class Base:
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """Initializes the object with an optional ID. If no ID is provided, it assigns a unique ID."""
         if id is not None:
             self.id = id
         else:
@@ -42,6 +41,8 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         """returns an instance with all attributes already set"""
+        from models.rectangle import Rectangle
+        from models.square import Square
         if cls is Rectangle:
             n1 = Rectangle(1, 1)
         elif cls is Square:
@@ -53,7 +54,7 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """returns a list of instances."""
+        """Loads objects from a JSON file and returns a list of instances."""
         filename = f"{cls.__name__}.json"
         file_path = Path(filename)
         if file_path.exists():
