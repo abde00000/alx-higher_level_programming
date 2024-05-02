@@ -54,7 +54,6 @@ class Base:
 
     @classmethod
     def load_from_file(cls):
-        """Loads objects from a JSON file and returns a list of instances."""
         filename = f"{cls.__name__}.json"
         file_path = Path(filename)
         if file_path.exists():
