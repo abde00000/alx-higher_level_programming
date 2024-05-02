@@ -59,7 +59,7 @@ class Base:
         if file_path.exists():
             with open(filename, "r", encoding="utf-8") as f:
                 new_dict = f.read()
-            return cls.from_json_string(new_dict)
+            return [cls.create(**d) for d in cls.from_json_string(new_dict)]
         else:
             return []
 
