@@ -62,4 +62,3 @@ class Base:
             return [cls.create(**d) for d in cls.from_json_string(new_dict)]
         else:
             return []
-
